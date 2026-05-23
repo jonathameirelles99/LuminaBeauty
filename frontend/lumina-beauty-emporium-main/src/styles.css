@@ -1,0 +1,123 @@
+@import "tailwindcss" source(none);
+@source "../src";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+/* Lumina Beauty — design system */
+@theme inline {
+  --font-display: "Playfair Display", Georgia, serif;
+  --font-sans: "Inter", system-ui, sans-serif;
+
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --radius-2xl: calc(var(--radius) + 8px);
+  --radius-3xl: calc(var(--radius) + 12px);
+
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-gold: var(--gold);
+  --color-gold-foreground: var(--gold-foreground);
+  --color-rose: var(--rose);
+  --color-blush: var(--blush);
+
+  --shadow-soft: 0 4px 24px -8px color-mix(in oklab, var(--primary) 25%, transparent);
+  --shadow-elegant: 0 20px 60px -20px color-mix(in oklab, var(--primary) 40%, transparent);
+  --shadow-gold: 0 8px 30px -12px color-mix(in oklab, var(--gold) 50%, transparent);
+
+  --gradient-rose: linear-gradient(135deg, var(--rose) 0%, var(--blush) 100%);
+  --gradient-gold: linear-gradient(135deg, oklch(0.82 0.12 80), oklch(0.72 0.14 60));
+  --gradient-hero: linear-gradient(180deg, var(--background) 0%, var(--blush) 100%);
+}
+
+:root {
+  --radius: 0.875rem;
+
+  /* Base */
+  --background: oklch(0.99 0.005 20);
+  --foreground: oklch(0.25 0.04 350);
+
+  --card: oklch(1 0 0);
+  --card-foreground: oklch(0.25 0.04 350);
+  --popover: oklch(1 0 0);
+  --popover-foreground: oklch(0.25 0.04 350);
+
+  /* Pink primary */
+  --primary: oklch(0.72 0.14 5);
+  --primary-foreground: oklch(0.99 0.005 20);
+
+  --secondary: oklch(0.96 0.02 10);
+  --secondary-foreground: oklch(0.35 0.06 350);
+
+  --muted: oklch(0.97 0.012 20);
+  --muted-foreground: oklch(0.5 0.04 350);
+
+  --accent: oklch(0.93 0.04 15);
+  --accent-foreground: oklch(0.3 0.06 350);
+
+  --destructive: oklch(0.6 0.22 25);
+  --destructive-foreground: oklch(0.99 0 0);
+
+  --border: oklch(0.92 0.02 15);
+  --input: oklch(0.94 0.02 15);
+  --ring: oklch(0.72 0.14 5);
+
+  /* Brand extras */
+  --gold: oklch(0.78 0.13 75);
+  --gold-foreground: oklch(0.25 0.05 60);
+  --rose: oklch(0.92 0.05 10);
+  --blush: oklch(0.96 0.03 15);
+}
+
+@layer base {
+  * {
+    border-color: var(--color-border);
+  }
+  html {
+    font-family: var(--font-sans);
+  }
+  body {
+    background-color: var(--color-background);
+    color: var(--color-foreground);
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+  }
+  h1, h2, h3, h4 {
+    font-family: var(--font-display);
+    letter-spacing: -0.01em;
+  }
+}
+
+@layer utilities {
+  .text-gradient-gold {
+    background: var(--gradient-gold);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+  .bg-hero {
+    background: var(--gradient-hero);
+  }
+  .shadow-soft { box-shadow: var(--shadow-soft); }
+  .shadow-elegant { box-shadow: var(--shadow-elegant); }
+  .shadow-gold { box-shadow: var(--shadow-gold); }
+}

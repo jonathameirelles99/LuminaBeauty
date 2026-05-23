@@ -1,0 +1,41 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\jonat\\Downloads\\LuminaBeauty\\LuminaBeauty\\backend\\LuminaBeauty.API\\wwwroot\\uploads\\077750cf-c8e2-47d3-aad1-15acb2c8b65a.png",
+      "PackagePath": "staticwebassets\\uploads\\077750cf-c8e2-47d3-aad1-15acb2c8b65a.png"
+    },
+    {
+      "Id": "C:\\Users\\jonat\\Downloads\\LuminaBeauty\\LuminaBeauty\\backend\\LuminaBeauty.API\\wwwroot\\uploads\\35e04f95-0b19-47d7-b86b-8abafc5e42c6.png",
+      "PackagePath": "staticwebassets\\uploads\\35e04f95-0b19-47d7-b86b-8abafc5e42c6.png"
+    },
+    {
+      "Id": "C:\\Users\\jonat\\Downloads\\LuminaBeauty\\LuminaBeauty\\backend\\LuminaBeauty.API\\wwwroot\\uploads\\b51898ba-5db1-451f-b340-2371586fbb58.png",
+      "PackagePath": "staticwebassets\\uploads\\b51898ba-5db1-451f-b340-2371586fbb58.png"
+    },
+    {
+      "Id": "C:\\Users\\jonat\\Downloads\\LuminaBeauty\\LuminaBeauty\\backend\\LuminaBeauty.API\\wwwroot\\uploads\\c11cfa23-5dc3-4708-b142-785f686ae156.png",
+      "PackagePath": "staticwebassets\\uploads\\c11cfa23-5dc3-4708-b142-785f686ae156.png"
+    },
+    {
+      "Id": "C:\\Users\\jonat\\Downloads\\LuminaBeauty\\LuminaBeauty\\backend\\LuminaBeauty.API\\wwwroot\\uploads\\e05463fa-650d-46b7-9793-30284fd87821.png",
+      "PackagePath": "staticwebassets\\uploads\\e05463fa-650d-46b7-9793-30284fd87821.png"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.LuminaBeauty.API.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.LuminaBeauty.API.props",
+      "PackagePath": "build\\LuminaBeauty.API.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.LuminaBeauty.API.props",
+      "PackagePath": "buildMultiTargeting\\LuminaBeauty.API.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.LuminaBeauty.API.props",
+      "PackagePath": "buildTransitive\\LuminaBeauty.API.props"
+    }
+  ],
+  "ElementsToRemove": []
+}
